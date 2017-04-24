@@ -2,14 +2,15 @@
 	int main(void)
 	{
 	char ch;
-	while(scanf("%c",&ch) !=EOF)
+	while(scanf("%c",&ch) ==1)
 	{	
-		if(ch!='\n')
+		if(ch =='\n')
 		{
-			printf("%c",ch-7);
+			printf("\n");
 		}else
 		{
-		printf("\n");
+		printf("%c",ch-7);
 		}
 	}
+	return 0;
 	}
